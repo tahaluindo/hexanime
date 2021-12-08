@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+main#homeManga {
+    margin: 30px 0;
+    box-sizing: border-box;
+}
+
+main#homeManga .bannerManga {
+    margin-top: 50px;
+    height: 450px;
+    display: flex;
+    align-items: flex-end;
+
+    background-image: url('https://i.pinimg.com/originals/95/55/a0/9555a0b521676af5806153cc19267ab5.jpg');
+    background-size: cover;
+    background-position: 40% 80%;
+    /* height: 400px; */
+    position: relative;
+}
+
+main#homeManga .typography {
+    width: 80%;
+    margin: auto;
+    color: white;
+    text-align: left;
+
+    z-index: 1;
+}
+
+main#homeManga .typography h1 {
+    font-size: 40px;
+}
+
+main#homeManga img.blackBlur {
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    opacity: .5;
+}

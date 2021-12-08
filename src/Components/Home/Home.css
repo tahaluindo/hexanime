@@ -1,0 +1,51 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+section#homeContainer {
+    margin-top: 50px;
+    overflow: hidden;
+}
+
+section#homeContainer .banner {
+
+    display: flex;
+    align-items: center;
+    
+    width: 100%;
+    height: 450px;
+
+    box-sizing: border-box;
+    
+    background: url('https://i.imgur.com/7eFy7LI.jpg');
+    background-size: cover;
+    background-position: 20% 55%;
+
+    position: relative;
+
+    /* border: 1px solid red; */
+}
+
+section#homeContainer .banner #typographyContainer {
+    width: 80%;
+    margin: 40px auto;
+    z-index: 1;
+}
+
+section#homeContainer .banner #typographyContainer .typography {
+    color: white;
+    text-align: left;
+    width: fit-content;
+}
+
+section#homeContainer .banner #typographyContainer .typography h2 {
+    font-size: 40px;
+}
+
+section#homeContainer .banner img {
+    position: absolute;
+    left: 0;
+
+    opacity: .5;
+}

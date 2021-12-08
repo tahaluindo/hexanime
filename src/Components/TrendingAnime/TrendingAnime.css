@@ -1,0 +1,110 @@
+section#trendingAnime {
+    width: 80%;
+    margin: auto;
+    padding: 100px 0;
+}
+
+section#trendingAnime header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    text-align: left;
+}
+
+section#trendingAnime header .look-more a {
+    color: orangered;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+section#trendingAnime header .look-more a:hover {
+    text-decoration: underline;
+}
+
+section#trendingAnime header h1 {
+    font-size: 22px;
+}
+
+section#trendingAnime header p {
+    font-size: 14px;
+    color: rgb(74, 74, 74);
+}
+
+.trendingItems {
+    margin-top: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+}
+
+.trendingItems .item {
+    display: flex;
+    cursor: pointer;
+    text-align: left;
+    flex-direction: column;
+
+    border: 1px solid #D8D8D8;
+}
+
+.trendingItems .item .title {
+    padding: 15px;
+    box-sizing: border-box;
+    transition: .1s ease-in-out;
+    background-color: rgb(247, 247, 247);
+}
+
+.trendingItems .item:hover p {
+    color: orangered;
+}
+
+.trendingItems .item:hover .title {
+    background-color: rgb(239, 239, 239);
+}
+
+.trendingItems .item img {
+    width: 230px;
+}
+
+.trendingItems .item p {
+    width: 200px;
+    font-weight: 500;
+    transition: .1s ease-in-out;
+}
+
+/* Responsive Breakpoint */
+@media (max-width: 1560px) {
+    .trendingItems .item img {
+        width: 200px;
+    }
+
+    .trendingItems .item .title {
+        width: 200px;
+    }
+
+    .trendingItems .item p {
+        font-size: 14px;
+        width: 180px;
+    }
+}
+
+/* Responsive Breakpoint */
+@media (max-width: 1320px) {
+    .trendingItems .item {
+        width: 180px;
+    }
+
+    .trendingItems .item .title {
+        width: inherit;
+    }
+
+    .trendingItems .item img {
+        width: 180px;
+    }
+
+    .trendingItems .item p {
+        font-size: 12px;
+        width: 180px;
+    }
+}
